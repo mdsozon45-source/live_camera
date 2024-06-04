@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Camera Filter with Face Detection</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@latest/dist/face-api.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Live Camera Filter with Face Detection</h1>
+  <video id="video" autoplay></video>
+  <canvas id="main-canvas"></canvas>
+
+  <div class="filters">
+    <div class="filter-option" data-filter="none">
+      <canvas id="filter-none"></canvas>
+      <p>Normal</p>
+    </div>
+    <div class="filter-option" data-filter="grayscale">
+      <canvas id="filter-grayscale"></canvas>
+      <p>Grayscale</p>
+    </div>
+    <div class="filter-option" data-filter="sepia">
+      <canvas id="filter-sepia"></canvas>
+      <p>Sepia</p>
+    </div>
+  </div>
+
+  
+</body>
+</html>
